@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: Roboto Slab;
+    }
+
+    body {
+      width: 200px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+    }
+
+    .author {
+      color: #fff;
+      font-size: 16px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: #246eb9;
+    }
+
+    .heart {
+      color: #ff005d;
+      margin-left: 10px;
+    }
+
+    .code {
+      color: rgba(255, 255, 255, .7);
+      margin-right: 10px;
+    }
+
+    h1 {
+      color: rgb(166, 127, 78);
+      margin: 0;
+    }
+
+    h2 {
+      color: #333;
+      margin: 0;
+    }
+
+    a {
+      margin-top: 1em;
+      color: #333 !important;
+      cursor: pointer;
+      font-size: 10px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1 id="time"></h1>
+    <h2>Lifetime saved.</h1>
+
+      <a id="reset">Reset</a>
+  </div>
+  <div class="author">
+    <i class="code fas fa-code"></i>
+    with
+    <i class="heart fas fa-heart"></i>
+  </div>
+
+</body>
+<script src="popup.js"></script>
+
+</html>

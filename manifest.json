@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Towa Supercharged",
+  "description": "Remove annoying loading overlay.",
+  "version": "0.1",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.towa-digital.com/*", 
+        "https://www.towa-digital.com/*"],
+      "js": ["index.js"],
+      "css": ["base.css"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
